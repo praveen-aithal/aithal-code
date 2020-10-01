@@ -2,5 +2,5 @@
 service=httpd
 if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 0 ))
 then
-service httpd stop
+sudo service httpd stop
 fi
